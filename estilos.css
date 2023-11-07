@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#exeption{
+    margin: .7rem .9rem 0px;
+}
+#title{
+    background-color: rgb(180, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+.exe{
+    margin-top: 1rem !important;
+}
+#nav_head{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.titulos{
+    text-decoration: none;
+    width: 100%;
+    margin-top: 1rem !important;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    font-size: 20px;
+}
+.titulos:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background: red;
+    height: 65px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+}
+    
+nav{
+    background:red;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+    
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float:left;
+    width:calc(75% - 75px);
+    background: white;
+    padding: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+#tip{
+    margin-top: 1rem;
+}
+.size_article{
+    font-size: 17px;
+}
+.article{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 2rem 4rem 10px;
+
+}
+
+.article:first-child{
+    padding-top: 10px;
+}
+#title2{
+    margin: 0 auto 1rem;
+}
+.article h2{
+   font-size: 25px; 
+}
+#rede{
+    margin-top: 1rem;
+}
+aside{
+    float:left;
+    width: calc(25% - 25px);
+    min-height: 525px;
+    background: rgb(228, 159, 9);
+    padding: 10px;
+    color: white;
+}
+footer{
+    background: red;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+#button_search{
+    border: none;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    cursor: pointer;
+    min-width: 100%;
+    margin: auto;
+}
+#button_search:hover{
+    background-color: rgb(219, 218, 218);
+}
+#buscador{
+    margin: 1rem auto;
+    width: 90%;
+    height: 35px;
+    padding: 0rem .5rem;
+}
+
+
+/* Slide Images */
+
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+#redes{
+    margin: 2rem auto;
+}
+.title_red{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img_red{
+    width: 50px;
+    height: 50px;
+    margin: .5rem auto .5rem;
+}
+.imh_profile{
+    width: 97%;
+    background-color: rgb(194, 135, 10);
+    border-radius: 30px;
+    margin: .2rem auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.imh_profile:hover{
+    background-color: rgb(163, 115, 12);
+}
+.contact{
+    font-size: 20px ;
+    padding-top: 1rem;
+}
